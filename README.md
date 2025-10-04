@@ -66,6 +66,20 @@ import { uuidv4 } from '@sillytavern/scripts/utils';  // 导入 `SillyTavern/pub
 
 此外, 你可以调整 `eslint.config.mjs` 中对 tailwindcss 的配置; 尤其是 eslint-plugin-better-tailwindcss 与 prettier 之间的[冲突问题](https://stagedog.github.io/青空莉/工具经验/实时编写前端界面或脚本/进阶技巧/).
 
+### WebAssembly (WASM)
+
+本项目已集成 WebAssembly 支持，允许使用 Rust 编写高性能模块。
+
+```bash
+# 构建 WASM 模块
+npm run wasm:dev
+
+# 一键开发（WASM + Vite）
+npm run dev
+```
+
+详细文档请参考：[docs/WASM.md](docs/WASM.md)
+
 ### 打包
 
 酒馆只接收单个 `.js` 文件作为插件入口, 模板将其设定为 `dist/index.js`.

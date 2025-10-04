@@ -16,3 +16,9 @@ storage/
 
 # nix-relative
 .direnv/
+
+
+# rust
+rust-wasm/target/
+rust-wasm/pkg/
+rust-wasm/Cargo.lock

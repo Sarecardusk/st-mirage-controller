@@ -6,7 +6,11 @@
     "watch": "vite build --watch --mode development",
     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,css,scss,html,vue}\"",
     "lint": "eslint",
-    "lint:fix": "eslint --fix"
+    "lint:fix": "eslint --fix",
+    "wasm:build": "cd rust-wasm && wasm-pack build --target web --release",
+    "wasm:dev": "cd rust-wasm && wasm-pack build --target web --dev",
+    "dev": "npm run wasm:dev && npm run watch",
+    "release": "npm run wasm:build && npm run build"
   },
   "browserslist": [
     "defaults and partially supports es6-module"

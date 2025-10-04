@@ -40,10 +40,13 @@
   "include": [
     "*.d.ts",
     "src/**/*.ts",
+    "src/**/*.vue",
+    "rust-wasm/pkg/**/*.d.ts",
     "../../../../**/*.js" // for intelligence
   ],
   "exclude": [
     "**/node_modules/**",
     "**/dist/**",
+    "rust-wasm/target/**"
   ]
 }
