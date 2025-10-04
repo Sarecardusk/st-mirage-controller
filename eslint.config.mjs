@@ -49,13 +49,21 @@ export default [
         ...globals.browser,
       },
     },
+    settings: {
+      'import-x/resolver': {
+        typescript: {
+          alwaysTryTypes: true,
+          project: './tsconfig.json',
+        },
+      },
+    },
     rules: {
       'handle-callback-err': 'off',
       'import-x/no-console': 'off',
       'import-x/no-cycle': 'error',
       'import-x/no-dynamic-require': 'warn',
       'import-x/no-nodejs-modules': 'warn',
-      'import-x/no-unresolved': ['error', { ignore: ['\\.wasm(\\?.*)?$'] }],
+      'import-x/no-unresolved': ['error', { ignore: ['\\.wasm(\\?.*)?$', '^@sillytavern/'] }],
       'no-dupe-class-members': 'off',
       'no-empty-function': 'off',
       'no-floating-decimal': 'error',
@@ -75,5 +83,5 @@ export default [
     },
   },
   eslintConfigPrettier,
-  globalIgnores(['dist/**', 'node_modules/**', 'eslint.config.mjs', 'postcss.config.js', 'vite.config.ts']),
+  globalIgnores(['dist/**', 'node_modules/**', 'types/**', 'eslint.config.mjs', 'postcss.config.js', 'vite.config.ts']),
 ];

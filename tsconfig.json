@@ -13,7 +13,7 @@
     ],
     "paths": {
       "@sillytavern/*": [
-        "../../../../../*"
+        "../../../../../public/*"
       ],
       "@/*": [
         "./*"
@@ -35,18 +35,21 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
   },
   "include": [
     "*.d.ts",
     "src/**/*.ts",
     "src/**/*.vue",
     "rust-wasm/pkg/**/*.d.ts",
+    "types/**/*.d.ts",
     "../../../../**/*.js" // for intelligence
   ],
   "exclude": [
     "**/node_modules/**",
     "**/dist/**",
-    "rust-wasm/target/**"
+    "rust-wasm/target/**",
+    "../ST-Prompt-Template/**"
   ]
 }
