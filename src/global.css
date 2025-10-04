@@ -1,0 +1,23 @@
+/* Mirage Controller 面板样式 */
+
+/* 确保面板内容填充整个 drawer */
+#mirage-controller-panel {
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* drawer 内容区域样式优化 */
+#mirage-controller-button .drawer-content {
+  /* 继承 SillyTavern 的 drawer 样式 */
+  min-width: 300px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+/* 响应式设计 - 移动设备适配 */
+@media (max-width: 768px) {
+  #mirage-controller-button .drawer-content {
+    width: 100vw;
+    max-width: 100%;
+  }
+}
