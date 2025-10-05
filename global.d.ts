@@ -1,5 +1,6 @@
 declare const hljs: typeof import('highlight.js').default;
 declare const Popper: typeof import('@popperjs/core');
+<<<<<<< HEAD
 
 // WebAssembly module type definitions
 declare module '*.wasm?init' {
@@ -17,3 +18,5 @@ declare module '*.vue' {
   const component: DefineComponent;
   export default component;
 }
+=======
+>>>>>>> 18afb459c3cbd2b75317fb56615376cc0df44554

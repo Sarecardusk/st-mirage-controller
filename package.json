@@ -1,10 +1,15 @@
 {
+<<<<<<< HEAD
   "name": "st-mirage-controller",
+=======
+  "name": "<插件名称>",
+>>>>>>> 18afb459c3cbd2b75317fb56615376cc0df44554
   "version": "1.0.0",
   "scripts": {
     "build": "vite build",
     "watch": "vite build --watch --mode development",
     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,css,scss,html,vue}\"",
+<<<<<<< HEAD
     "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx,css,scss,html,vue}\"",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
@@ -20,6 +25,10 @@
     "check:all": "npm run format:check && npm run lint && npm run typecheck && npm run wasm:fmt:check && npm run wasm:check && npm run wasm:clippy",
     "dev": "npm run wasm:dev && npm run watch",
     "release": "npm run wasm:build && npm run build"
+=======
+    "lint": "eslint",
+    "lint:fix": "eslint --fix"
+>>>>>>> 18afb459c3cbd2b75317fb56615376cc0df44554
   },
   "browserslist": [
     "defaults and partially supports es6-module"

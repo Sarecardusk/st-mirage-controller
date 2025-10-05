@@ -49,6 +49,7 @@ export default [
         ...globals.browser,
       },
     },
+<<<<<<< HEAD
     settings: {
       'import-x/resolver': {
         typescript: {
@@ -57,13 +58,18 @@ export default [
         },
       },
     },
+=======
+>>>>>>> 18afb459c3cbd2b75317fb56615376cc0df44554
     rules: {
       'handle-callback-err': 'off',
       'import-x/no-console': 'off',
       'import-x/no-cycle': 'error',
       'import-x/no-dynamic-require': 'warn',
       'import-x/no-nodejs-modules': 'warn',
+<<<<<<< HEAD
       'import-x/no-unresolved': ['error', { ignore: ['\\.wasm(\\?.*)?$', '^@sillytavern/'] }],
+=======
+>>>>>>> 18afb459c3cbd2b75317fb56615376cc0df44554
       'no-dupe-class-members': 'off',
       'no-empty-function': 'off',
       'no-floating-decimal': 'error',
@@ -83,5 +89,9 @@ export default [
     },
   },
   eslintConfigPrettier,
+<<<<<<< HEAD
   globalIgnores(['dist/**', 'node_modules/**', 'types/**', 'eslint.config.mjs', 'postcss.config.js', 'vite.config.ts']),
+=======
+  globalIgnores(['dist/**', 'node_modules/**', 'eslint.config.mjs', 'postcss.config.js', 'vite.config.ts']),
+>>>>>>> 18afb459c3cbd2b75317fb56615376cc0df44554
 ];

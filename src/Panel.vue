@@ -1,8 +1,17 @@
 <template>
   <div class="example-extension-settings">
+<<<<<<< HEAD
     <div class="inline-drawer-header">
       <b>{{ t`插件示例` }}</b>
     </div>
+=======
+    <div class="inline-drawer">
+      <div class="inline-drawer-toggle inline-drawer-header">
+        <b>{{ t`插件示例` }}</b>
+        <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+      </div>
+      <div class="inline-drawer-content">
+>>>>>>> 18afb459c3cbd2b75317fb56615376cc0df44554
     <div class="example-extension_block flex-container">
       <input class="menu_button" type="submit" :value="t`示例按钮`" @click="handle_button_click" />
     </div>
@@ -14,6 +23,11 @@
 
     <hr class="sysHR" />
   </div>
+<<<<<<< HEAD
+=======
+    </div>
+  </div>
+>>>>>>> 18afb459c3cbd2b75317fb56615376cc0df44554
 </template>
 
 <script setup lang="ts">

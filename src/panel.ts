@@ -18,6 +18,7 @@ const i18n = {
 };
 app.use(i18n);
 
+<<<<<<< HEAD
 /**
  * 创建 drawer HTML 结构
  */
@@ -97,4 +98,9 @@ export function initPanel() {
 
     console.log('[Mirage Controller] Panel initialized in top-bar');
   });
+=======
+export function initPanel() {
+  const $app = $('<div id="tavern_extension_example">').appendTo('#extensions_settings2');
+  app.mount($app[0]);
+>>>>>>> 18afb459c3cbd2b75317fb56615376cc0df44554
 }
