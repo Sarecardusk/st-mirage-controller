@@ -97,4 +97,8 @@ export function initPanel() {
 
     console.log('[Mirage Controller] Panel initialized in top-bar');
   });
+  /** export function initPanel() {
+   * const $app = $('<div id="tavern_extension_example">').appendTo('#extensions_settings2');
+   * app.mount($app[0]);
+   * } */
 }
