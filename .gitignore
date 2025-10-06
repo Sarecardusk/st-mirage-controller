@@ -22,3 +22,6 @@ storage/
 rust-wasm/target/
 rust-wasm/pkg/
 rust-wasm/Cargo.lock
+
+# temp
+.temp/
