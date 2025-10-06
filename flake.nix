@@ -54,6 +54,7 @@
                 name = "prettier (auto-format)";
                 entry = "${pkgs.nodePackages.pnpm}/bin/pnpm format";
                 files = "\\.(ts|tsx|js|jsx|css|scss|html|vue)$";
+                excludes = [ "^\\.temp-.*" ];
                 pass_filenames = false;
               };
               
@@ -63,6 +64,7 @@
                 name = "eslint";
                 entry = "${pkgs.nodePackages.pnpm}/bin/pnpm lint";
                 files = "\\.(ts|tsx|js|jsx|vue)$";
+                excludes = [ "^\\.temp-.*" ];
                 pass_filenames = false;
               };
               
@@ -72,6 +74,7 @@
                 name = "typecheck";
                 entry = "${pkgs.nodePackages.pnpm}/bin/pnpm typecheck";
                 files = "\\.(ts|tsx|vue)$";
+                excludes = [ "^\\.temp-.*" ];
                 pass_filenames = false;
               };
               
@@ -81,6 +84,7 @@
                 name = "rustfmt (auto-format)";
                 entry = "${pkgs.nodePackages.pnpm}/bin/pnpm wasm:fmt";
                 files = "\\.rs$";
+                excludes = [ "^\\.temp-.*" ];
                 pass_filenames = false;
               };
               
@@ -90,6 +94,7 @@
                 name = "cargo check";
                 entry = "${pkgs.nodePackages.pnpm}/bin/pnpm wasm:check";
                 files = "\\.rs$";
+                excludes = [ "^\\.temp-.*" ];
                 pass_filenames = false;
               };
               
@@ -99,6 +104,7 @@
                 name = "clippy";
                 entry = "${pkgs.nodePackages.pnpm}/bin/pnpm wasm:clippy";
                 files = "\\.rs$";
+                excludes = [ "^\\.temp-.*" ];
                 pass_filenames = false;
               };
             };
@@ -135,3 +141,4 @@
         });
     };
 }
+
