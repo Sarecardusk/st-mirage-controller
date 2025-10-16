@@ -17,9 +17,48 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       - uses: JesseTG/rm@v1.0.3
         with:
-          path: dist
+          path: |
+            dist
+            wasm/pkg
 
-      # build
+      # setup rust toolchain for wasm
+      - name: Setup Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-unknown-unknown
+
+      # install wasm-pack
+      - name: Install wasm-pack
+        run: curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
+
+      # install binaryen (provides wasm-opt)
+      - name: Install binaryen
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y binaryen
+
+      # install wabt (provides wasm-strip, wasm2wat, etc.)
+      - name: Install wabt
+        run: |
+          sudo apt-get install -y wabt
+
+      # build wasm (release mode for optimization)
+      - name: Build WASM
+        run: cd wasm && wasm-pack build --target web --release
+
+      # optimize wasm with wasm-opt
+      - name: Optimize WASM with wasm-opt
+        run: |
+          cd wasm && wasm-opt -O3 --enable-bulk-memory --enable-mutable-globals \
+            --enable-nontrapping-float-to-int --enable-sign-ext \
+            --enable-simd --enable-reference-types \
+            pkg/wasm_bg.wasm -o pkg/wasm_bg.wasm
+
+      # strip debug info with wasm-strip
+      - name: Strip WASM debug info
+        run: cd wasm && wasm-strip pkg/wasm_bg.wasm
+
+      # build frontend
       - uses: actions/setup-node@v4
         with:
           node-version: 22

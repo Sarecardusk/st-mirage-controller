@@ -10,7 +10,7 @@
     "wasm:build:dev": "cd wasm && wasm-pack build --target web --dev",
     "wasm:build": "cd wasm && wasm-pack build --target web --release",
     "wasm:watch": "cd wasm && cargo watch -i wasm -s 'wasm-pack build --target web --dev'",
-    "wasm:optimize": "cd wasm && wasm-opt -Oz --enable-bulk-memory --enable-mutable-globals --enable-nontrapping-float-to-int --enable-sign-ext --enable-simd --enable-reference-types ./*.wasm -o ./*.wasm",
+    "wasm:optimize": "cd wasm && wasm-opt -O1 --enable-bulk-memory --enable-mutable-globals --enable-nontrapping-float-to-int --enable-sign-ext --enable-simd --enable-reference-types pkg/wasm_bg.wasm -o pkg/wasm_bg.wasm",
     "wasm:inspect": "cd wasm && wasm2wat ./*.wasm > ./output.wat && wc -l ./output.wat"
   },
   "browserslist": [
