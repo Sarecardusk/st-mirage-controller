@@ -14,3 +14,12 @@ pnpm-debug.log*
 .direnv/
 
 .pre-commit-config.yaml
+
+# wasm-pack
+target/
+wasm/target/
+wasm/**/*.rs.bk
+wasm/Cargo.lock
+wasm/bin/
+wasm/pkg/
+wasm/wasm-pack.log
