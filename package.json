@@ -1,6 +1,6 @@
 {
-  "name": "<插件名称>",
-  "version": "1.0.0",
+  "name": "st-mirage-controller",
+  "version": "0.0.1",
   "scripts": {
     "build": "vite build",
     "watch": "vite build --watch --mode development",
