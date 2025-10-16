@@ -101,7 +101,7 @@
               cargo
               rustfmt
               rust-src
-              targets.wasm32-unknown-unknown.latest.rust-std
+              targets.wasm32-unknown-unknown.stable.rust-std
             ]
           );
       };
