@@ -51,6 +51,9 @@ importers:
       '@popperjs/core':
         specifier: ^2.11.8
         version: 2.11.8
+      '@sqliteai/sqlite-wasm':
+        specifier: 3.50.4-sync.0.8.52-vector.0.9.46
+        version: 3.50.4-sync.0.8.52-vector.0.9.46
       '@tailwindcss/postcss':
         specifier: ^4.1.14
         version: 4.1.14
@@ -610,6 +613,9 @@ packages:
     resolution: {integrity: sha512-bf9PtUa0u8IXDVxzRToFQKsNCRz9qLYfR/MpECxl4mRoWYjAeFjgxj1XdZr2M/GNVpT05p+LgQOHopYDlUu6/w==}
     cpu: [x64]
     os: [win32]
+
+  '@sqliteai/sqlite-wasm@3.50.4-sync.0.8.52-vector.0.9.46':
+    resolution: {integrity: sha512-cQ0skVJ0ZRN20G7UInAxrlgAmtdC0eJm9Fnk3TMTRYkbLFpPzO8iQlxTAaJH0qeAeYuq5HAslsn4eLBfRtYhtA==}
 
   '@tailwindcss/node@4.1.14':
     resolution: {integrity: sha512-hpz+8vFk3Ic2xssIA3e01R6jkmsAhvkQdXlEbRTk6S10xDAtiQiM3FyvZVGsucefq764euO/b8WUW9ysLdThHw==}
@@ -3109,6 +3115,8 @@ snapshots:
 
   '@rollup/rollup-win32-x64-msvc@4.52.4':
     optional: true
+
+  '@sqliteai/sqlite-wasm@3.50.4-sync.0.8.52-vector.0.9.46': {}
 
   '@tailwindcss/node@4.1.14':
     dependencies:
