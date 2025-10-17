@@ -10,6 +10,8 @@
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest --coverage",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
     "wasm:build:dev": "cd wasm && wasm-pack build --target web --dev",
     "wasm:build": "cd wasm && wasm-pack build --target web --release",
     "wasm:watch": "cd wasm && cargo watch -i wasm -s 'wasm-pack build --target web --dev'",
@@ -21,6 +23,7 @@
   ],
   "devDependencies": {
     "@eslint/js": "^9.37.0",
+    "@playwright/test": "^1.56.1",
     "@popperjs/core": "^2.11.8",
     "@tailwindcss/postcss": "^4.1.14",
     "@types/jquery": "^3.5.33",

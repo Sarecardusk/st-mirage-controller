@@ -23,3 +23,8 @@ wasm/Cargo.lock
 wasm/bin/
 wasm/pkg/
 wasm/wasm-pack.log
+
+# Playwright
+test-results/
+playwright-report/
+playwright/.cache/
