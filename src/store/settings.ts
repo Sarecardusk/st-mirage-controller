@@ -1,7 +1,7 @@
 import { setting_field, Settings } from '@/type/settings';
 import { validateInplace } from '@/util/zod';
-import { saveSettingsDebounced } from '@sillytavern/public/script';
-import { extension_settings } from '@sillytavern/public/scripts/extensions';
+import { saveSettingsDebounced } from '@sillytavern/script';
+import { extension_settings } from '@sillytavern/scripts/extensions';
 
 export const useSettingsStore = defineStore('mirage-settings', () => {
   const settings = ref(validateInplace(Settings, _.get(extension_settings, setting_field)));

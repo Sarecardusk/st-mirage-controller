@@ -7,7 +7,7 @@
     "types": ["jquery", "jqueryui", "lodash", "toastr", "type-fest"],
     "paths": {
       "wasm": ["../wasm/pkg"],
-      "@sillytavern/*": ["../../../../../*"],
+      "@sillytavern/*": ["../../../../../public/*"],
       "@/*": ["./*"]
     },
     "moduleDetection": "auto",

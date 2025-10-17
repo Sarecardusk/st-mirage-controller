@@ -21,6 +21,7 @@ export default [
       'import-x/resolver': {
         typescript: {
           project: './tsconfig.json',
+          extensions: ['.ts', '.tsx', '.js', '.jsx', '.mjs', '.cjs'],
         },
       },
     },
@@ -83,5 +84,5 @@ export default [
     },
   },
   eslintConfigPrettier,
-  globalIgnores(['dist/**', 'node_modules/**', 'eslint.config.mjs', 'postcss.config.js', 'vite.config.ts']),
+  globalIgnores(['dist/**', 'node_modules/**', 'eslint.config.mjs', 'postcss.config.js', 'vite.config.ts', 'types/**']),
 ];
