@@ -6,6 +6,7 @@ import unpluginVueComponents from 'unplugin-vue-components/vite';
 import { defineConfig } from 'vite';
 import pluginExternal from 'vite-plugin-external';
 import wasmPack from 'vite-plugin-wasm-pack';
+/// <reference types="vitest" />
 
 const externals = {
   jquery: '$',
@@ -108,5 +109,14 @@ export default defineConfig(({ mode }) => ({
           },
 
     target: 'esnext',
+  },
+
+  test: {
+    globals: true,
+    environment: 'happy-dom',
+    coverage: {
+      provider: 'v8',
+      reporter: ['text', 'json', 'html'],
+    },
   },
 }));
