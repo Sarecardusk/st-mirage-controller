@@ -15,7 +15,16 @@ export default [
   js.configs.recommended,
   ...ts.configs.recommended,
   importx.flatConfigs.recommended,
-  importx.flatConfigs.typescript,
+  {
+    ...importx.flatConfigs.typescript,
+    settings: {
+      'import-x/resolver': {
+        typescript: {
+          project: './tsconfig.json',
+        },
+      },
+    },
+  },
   ...vue.configs['flat/recommended'],
   pinia.configs['recommended-flat'],
   {

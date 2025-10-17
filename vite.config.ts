@@ -5,6 +5,7 @@ import { VueUseComponentsResolver, VueUseDirectiveResolver } from 'unplugin-vue-
 import unpluginVueComponents from 'unplugin-vue-components/vite';
 import { defineConfig } from 'vite';
 import pluginExternal from 'vite-plugin-external';
+import wasmPack from 'vite-plugin-wasm-pack';
 
 const externals = {
   jquery: '$',
@@ -28,6 +29,7 @@ export default defineConfig(({ mode }) => ({
         prodHydrationMismatchDetails: false,
       },
     }),
+    wasmPack('./wasm'),
     unpluginAutoImport({
       dts: true,
       dtsMode: 'overwrite',
