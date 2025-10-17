@@ -1,17 +1,26 @@
 {
+<<<<<<< HEAD
   "name": "st-mirage-controller",
   "version": "0.0.1",
+=======
+  "name": "<插件名称>",
+  "version": "1.0.0",
+>>>>>>> 52c21946a32347c21d16459cb017c0fb6873bec0
   "scripts": {
     "build": "vite build",
     "watch": "vite build --watch --mode development",
     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,css,scss,html,vue}\"",
     "lint": "eslint",
+<<<<<<< HEAD
     "lint:fix": "eslint --fix",
     "wasm:build:dev": "cd wasm && wasm-pack build --target web --dev",
     "wasm:build": "cd wasm && wasm-pack build --target web --release",
     "wasm:watch": "cd wasm && cargo watch -i wasm -s 'wasm-pack build --target web --dev'",
     "wasm:optimize": "cd wasm && wasm-opt -O1 --enable-bulk-memory --enable-mutable-globals --enable-nontrapping-float-to-int --enable-sign-ext --enable-simd --enable-reference-types pkg/wasm_bg.wasm -o pkg/wasm_bg.wasm",
     "wasm:inspect": "cd wasm && wasm2wat ./*.wasm > ./output.wat && wc -l ./output.wat"
+=======
+    "lint:fix": "eslint --fix"
+>>>>>>> 52c21946a32347c21d16459cb017c0fb6873bec0
   },
   "browserslist": [
     "defaults and partially supports es6-module"
@@ -60,10 +69,18 @@
     "@vueuse/core": "^13.9.0",
     "@vueuse/integrations": "^13.9.0",
     "@vueuse/shared": "^13.9.0",
+<<<<<<< HEAD
+=======
+    "klona": "^2.0.6",
+>>>>>>> 52c21946a32347c21d16459cb017c0fb6873bec0
     "pinia": "^3.0.3",
     "tailwindcss": "^4.1.14",
     "type-fest": "^4.41.0",
     "vue": "^3.5.22",
+<<<<<<< HEAD
+=======
+    "vue-final-modal": "^4.5.5",
+>>>>>>> 52c21946a32347c21d16459cb017c0fb6873bec0
     "zod": "^4.1.12"
   }
 }

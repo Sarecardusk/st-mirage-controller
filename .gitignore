@@ -9,6 +9,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+<<<<<<< HEAD
 
 # nix-relative
 .direnv/
@@ -23,3 +24,5 @@ wasm/Cargo.lock
 wasm/bin/
 wasm/pkg/
 wasm/wasm-pack.log
+=======
+>>>>>>> 52c21946a32347c21d16459cb017c0fb6873bec0
