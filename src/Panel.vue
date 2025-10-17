@@ -16,6 +16,9 @@
         </div>
 
         <hr class="sysHR" />
+
+        <!-- Router View for future pages -->
+        <router-view />
       </div>
     </div>
   </div>

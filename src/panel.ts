@@ -1,10 +1,12 @@
 import Panel from '@/Panel.vue';
+import { router } from '@/router';
 import { App } from 'vue';
 
 const app = createApp(Panel);
 
 const pinia = createPinia();
 app.use(pinia);
+app.use(router);
 
 declare module 'vue' {
   interface ComponentCustomProperties {
