@@ -1,0 +1,15 @@
+/* Mirage Controller 图标高亮控制 */
+/* 默认状态：不高亮 */
+#mirage-controller-button .drawer-icon.interactable {
+  opacity: 0.3;
+}
+
+/* 悬停时：高亮 */
+#mirage-controller-button .drawer-icon.interactable:hover {
+  opacity: 1;
+}
+
+/* 展开时：高亮 */
+#mirage-controller-button .drawer-icon.interactable.openIcon {
+  opacity: 1;
+}
