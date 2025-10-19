@@ -23,7 +23,10 @@
   ],
   "devDependencies": {
     "@eslint/js": "^9.38.0",
+<<<<<<< HEAD
     "@playwright/test": "^1.56.1",
+=======
+>>>>>>> f49502d1123334f214a8a3684b1c1c41aaa28499
     "@popperjs/core": "^2.11.8",
     "@sqliteai/sqlite-wasm": "3.50.4-sync.0.8.52-vector.0.9.46",
     "@tailwindcss/postcss": "^4.1.14",
