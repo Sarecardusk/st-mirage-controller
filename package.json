@@ -23,14 +23,19 @@
   ],
   "devDependencies": {
     "@eslint/js": "^9.38.0",
+<<<<<<< HEAD
     "@playwright/test": "^1.56.1",
     "@popperjs/core": "^2.11.8",
     "@sqliteai/sqlite-wasm": "3.50.4-sync.0.8.52-vector.0.9.46",
+=======
+    "@popperjs/core": "^2.11.8",
+>>>>>>> a43a11fc32059f8004772b87bc37b14f41d7b576
     "@tailwindcss/postcss": "^4.1.16",
     "@types/jquery": "^3.5.33",
     "@types/jqueryui": "^1.12.24",
     "@types/lodash": "^4.17.20",
     "@types/mark.js": "^8.11.12",
+    "@types/showdown": "^2.0.6",
     "@types/toastr": "^2.1.43",
     "@typescript-eslint/parser": "^8.46.2",
     "@vitejs/plugin-vue": "^6.0.1",
