@@ -1,13 +1,23 @@
 {
+<<<<<<< HEAD
   "display_name": "Mirage Controller",
+=======
+  "display_name": "<插件名称>",
+>>>>>>> a1d4b450e551280aae4a6e70f0f3a660762f9e99
   "loading_order": 120,
   "requires": [],
   "optional": [],
   "js": "dist/index.js",
   "css": "dist/index.css",
+<<<<<<< HEAD
   "author": "Sarecardusk",
   "version": "0.0.1",
   "homePage": "https://github.com/Sarecardusk/st-mirage-controller",
+=======
+  "author": "<作者名称>",
+  "version": "1.0.0",
+  "homePage": "<仓库URL>",
+>>>>>>> a1d4b450e551280aae4a6e70f0f3a660762f9e99
   "auto_update": true,
   "i18n": {
     "en": "i18n/en.json"
