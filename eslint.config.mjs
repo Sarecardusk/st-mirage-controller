@@ -36,6 +36,16 @@ export default [
     },
   },
   {
+    settings: {
+      'import-x/resolver': {
+        typescript: {
+          project: ['./tsconfig.json'],
+        },
+      },
+      'import-x/ignore': ['^@sillytavern/'],
+    },
+  },
+  {
     languageOptions: {
       parser: vueParser,
       parserOptions: {
@@ -53,6 +63,7 @@ export default [
       'handle-callback-err': 'off',
       'import-x/no-console': 'off',
       'import-x/no-cycle': 'error',
+      'import-x/no-unresolved': ['error', { ignore: ['^@sillytavern/'] }],
       'import-x/no-dynamic-require': 'warn',
       'import-x/no-nodejs-modules': 'warn',
       'no-dupe-class-members': 'off',
