@@ -5,4 +5,4 @@ export const Settings = z
   })
   .prefault({});
 
-export const setting_field = 'tavern_extension_example';
+export const setting_field = 'mirage_main_view';

@@ -1,16 +1,16 @@
 <template>
-  <div class="example-extension-settings">
+  <div class="mirage_main-settings">
     <div class="inline-drawer">
       <div class="inline-drawer-toggle inline-drawer-header">
         <b>{{ t`插件示例` }}</b>
         <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
       </div>
       <div class="inline-drawer-content">
-        <div class="example-extension_block flex-container">
+        <div class="mirage_main-block flex-container">
           <input class="menu_button" type="submit" :value="t`示例按钮`" @click="handle_button_click" />
         </div>
 
-        <div class="example-extension_block flex-container">
+        <div class="mirage_main-block flex-container">
           <input v-model="settings.button_selected" type="checkbox" />
           <label for="example_setting">{{ t`示例开关` }}</label>
         </div>
