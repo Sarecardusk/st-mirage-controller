@@ -40,7 +40,10 @@
   "include": [
     "*.d.ts",
     "src/**/*.ts",
+<<<<<<< HEAD
     "@types/**/*.d.ts",
+=======
+>>>>>>> 50e560ae6e58f9cadcedf743d9b8909c92f57de0
     "../../../../**/*.js" // for intelligence
   ],
   "exclude": [
