@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
   "name": "st-mirage-controller",
   "version": "0.0.1",
+=======
+  "name": "<插件名称>",
+  "version": "1.0.0",
+>>>>>>> 8d429dba37b2547116b89b2bd5608d20fd4e26bd
   "scripts": {
     "build": "vite build",
     "watch": "vite build --watch --mode development",
@@ -52,7 +57,10 @@
     "yaml": "^2.8.1"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@floating-ui/vue": "^1.1.9",
+=======
+>>>>>>> 8d429dba37b2547116b89b2bd5608d20fd4e26bd
     "@vueuse/components": "^13.9.0",
     "@vueuse/core": "^13.9.0",
     "@vueuse/integrations": "^13.9.0",
@@ -60,11 +68,17 @@
     "klona": "^2.0.6",
     "pinia": "^3.0.4",
     "tailwindcss": "^4.1.17",
+<<<<<<< HEAD
     "toastr": "^2.1.4",
     "type-fest": "^4.41.0",
     "vue": "^3.5.25",
     "vue-final-modal": "^4.5.5",
     "vue-router": "^4.6.3",
+=======
+    "type-fest": "^4.41.0",
+    "vue": "^3.5.25",
+    "vue-final-modal": "^4.5.5",
+>>>>>>> 8d429dba37b2547116b89b2bd5608d20fd4e26bd
     "zod": "^4.1.13"
   }
 }
