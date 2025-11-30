@@ -1,5 +1,19 @@
 <template>
   <div class="mirage_main-settings">
+    <div class="alignitemscenter flex-container wide100p mirage_main-header">
+      <h3 class="margin0 flex1">{{ t`主设置` }}</h3>
+      <label class="checkbox_label flexNoGap">
+        <input v-model="settings.plugin_enabled" type="checkbox" />
+        <span>{{ t`启用插件` }}</span>
+      </label>
+      <label class="checkbox_label flexNoGap">
+        <input v-model="settings.debug_mode" type="checkbox" />
+        <span>{{ t`调试模式` }}</span>
+      </label>
+    </div>
+
+    <hr class="sysHR" />
+
     <div class="inline-drawer">
       <div class="inline-drawer-toggle inline-drawer-header">
         <b>{{ t`插件示例` }}</b>
@@ -14,8 +28,6 @@
           <input v-model="settings.button_selected" type="checkbox" />
           <label for="example_setting">{{ t`示例开关` }}</label>
         </div>
-
-        <hr class="sysHR" />
       </div>
     </div>
   </div>

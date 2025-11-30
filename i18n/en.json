@@ -2,5 +2,7 @@
   "插件示例": "Plugin Example",
   "示例按钮": "Example Button",
   "示例开关": "Example Switch",
-  "主设置": "Main Setting"
+  "主设置": "Main Settings",
+  "启用插件": "Enable Plugin",
+  "调试模式": "Debug Mode"
 }
